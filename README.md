@@ -1,4 +1,4 @@
-# caffe-installation-toturial
+# caffe-installation-tutorial
 This toturial tells you how to install Nvidia driver, CUDA, cuDNN, OpenCV and Caffe on ubuntu16.04. 
 
 <h1 align = "center">Caffe installation tutorial</h1>
