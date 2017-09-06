@@ -86,8 +86,7 @@ After that, we could configure the environment. Input the command `sudo gedit ~/
 ```
 ## Step 4 -- Install cuDNN  
 ##### 4.1 Download cuDNN    
-Firstly, we go to the [cuDNN download page](https://developer.nvidia.com/rdp/form/cudnn-download-survey), it's necesscry to mention that it need membership tho download cuDNN, you can register freely and finish some survey then you can download cuDNN.    
-<br>![cudnn](../Pictures/cudnn.png)    
+Firstly, we go to the [cuDNN download page](https://developer.nvidia.com/rdp/form/cudnn-download-survey), it's necesscry to mention that it need membership tho download cuDNN, you can register freely and finish some survey then you can download cuDNN.       
 <br>The compressed file would be downloaded to ***Downloads folder*** in home folder. Uncompressed the file, you can get a file named *cuda*.
 ##### 4.2 Configure cuDNN   
 ```
@@ -103,7 +102,7 @@ Conduct the following command to configure cudnn:
     sudo ln -s libcudnn.so.7.0.1 libcudnn.so.7
     sudo ln -s libcudnn.so.7 libcudnn.so
 ```    
-Using the command `ls -al | grep libcudnn` to check if the soft link is correctly set. If the result shows as following, it's alright.    
+Using the command `ls -al | grep libcudnn` to check if the soft link is correctly set.   
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   
 <br>Then we set some environment variables:    
 `sudo gedit /etc/profile` and write `export PATH=/usr/local/cuda/bin:$PATH` into it.    
@@ -113,8 +112,7 @@ Using the command `ls -al | grep libcudnn` to check if the soft link is correctl
     cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
     sudo make
     sudo ./deviceQuery
-```
-If the result is as following, it means the CUDA and cuDNN are correctly installed.       
+```     
 
 ## Step 5 -- Install OpenCV
 We could go to the official [opencv  releases](http://opencv.org/releases.html) website to select the version of opencv. I would download the 3.3.0 source code. If you haven't install cmake yet, please install it firstly. Then we would compile the source code and install it:        
