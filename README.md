@@ -82,7 +82,7 @@ when one choice come out to let you install another version of nvidia driver, yo
 After that, we could configure the environment. Input the command `sudo gedit ~/.bashrc`, and write the following text into the file.
 ```
     export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
-    export LD_LIBRARY_PATH=/usr/local/cuda8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 ## Step 4 -- Install cuDNN  
 ##### 4.1 Download cuDNN    
