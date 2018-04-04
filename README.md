@@ -92,7 +92,7 @@ Firstly, we go to the [cuDNN download page](https://developer.nvidia.com/rdp/for
 ```
     cd cuda/include
     sudo cp -P cudnn.h /usr/local/cuda-8.0/include
-    sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
+    sudo cp -P ../../cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
     sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 ```    
 Conduct the following command to configure cudnn:    
