@@ -104,8 +104,8 @@ Conduct the following command to configure cudnn:
 ```    
 Using the command `ls -al | grep libcudnn` to check if the soft link is correctly set.     
 <br>Then we set some environment variables:    
-`sudo gedit /etc/profile` and write `export PATH=/usr/local/cuda/bin:$PATH` into it.    
-`sudo vim /etc/ld.so.conf.d/cuda.conf`, write `/usr/local/cuda/lib64` into it and then `sudo ldconfig` to make the link validly.    
+`sudo gedit /etc/profile` and write `export PATH=/usr/local/cuda-8.0/bin:$PATH` into it.    
+`sudo vim /etc/ld.so.conf.d/cuda.conf`, write `/usr/local/cuda-8.0/lib64` into it and then `sudo ldconfig` to make the link validly.    
 ##### 4.3 Test    
 ```
     cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
